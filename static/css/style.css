@@ -1,3 +1,9 @@
-.nav-wrapper{
-    color: darkslateblue !important;
+.card{
+    height: 400px;
+    overflow: hidden;
+}
+
+.card-image{
+     height: 250px;
+    overflow: hidden;
 }
