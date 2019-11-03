@@ -1,0 +1,59 @@
+{% load static %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Craigslist Clone</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel = "stylesheet" href = "{% static 'css/style.css' %}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <nav class="indigo darken-3" >
+    <div class="container nav-wrapper "  >
+      <a href="/" class="brand-logo">Craigslist</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down" >
+        <li><a href="/">Home</a></li>
+      </ul>
+    </div>
+  </nav>
+    <div class="container">
+  <h1 style="text-align: center">What do you want to search for?</h1>
+  <div class="row">
+    <div class="col s4" >
+      <div class="center">
+        <i class="large material-icons" style="color: brown">flash_on</i>
+        <p>Fast Craigslist Web Scrapper</p>
+      </div>
+    </div>
+      <div class="col s4" >
+      <div class="center">
+        <i class="large material-icons" style="color: coral ">camera</i>
+        <p>Filter Your Searches</p>
+       </div>
+    </div>
+       <div class="col s4" >
+      <div class="center">
+        <i class="large material-icons" style="color: darkgreen">chrome_reader_mode</i>
+        <p>Cleaner Frontend to Craigslist</p>
+      </div>
+    </div>
+  </div>
+    <form action="{% url 'new_search' %}" method="post">
+    {% csrf_token %}
+        <input type="text" name = 'search' placeholder="search">
+        <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+             <i class="material-icons right">send</i>
+        </button>
+    </form>
+        {% block content %}
+
+    {% endblock %}
+  </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"></script>
+</body>
+</html>
