@@ -20,6 +20,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -27,6 +30,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectId" id="1T0tfELg38r8lV0HlrjY5WZUVbK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -86,11 +90,22 @@
       <workItem from="1572619070665" duration="3347000" />
       <workItem from="1572750220786" duration="771000" />
       <workItem from="1572757577072" duration="3056000" />
-      <workItem from="1572776845629" duration="2099000" />
+      <workItem from="1572776845629" duration="2513000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
